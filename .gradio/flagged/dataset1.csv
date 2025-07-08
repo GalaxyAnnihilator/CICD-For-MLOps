@@ -1,0 +1,2 @@
+Age,Sex,Blood Pressure,Cholesterol,Na_to_K,output,timestamp
+20,M,NORMAL,NORMAL,15.6,"{""label"": null, ""confidences"": null}",2025-07-08 17:29:55.169510
