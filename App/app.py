@@ -26,7 +26,7 @@ def predict_drug(age, sex, blood_pressure, cholesterol, na_to_k_ratio):
 
 inputs = [
     gr.Slider(15, 74, step=1, label="Age"),
-    gr.Radio(["Male", "Female"], label="Sex"),
+    gr.Radio(["M", "F"], label="Sex"),
     gr.Radio(["HIGH", "LOW", "NORMAL"], label="Blood Pressure"),
     gr.Radio(["HIGH", "NORMAL"], label="Cholesterol"),
     gr.Slider(6.2, 38.2, step=0.1, label="Na_to_K"),
