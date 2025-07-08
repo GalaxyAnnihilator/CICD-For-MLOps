@@ -13,6 +13,7 @@ eval:
 
 	echo '\n## Confusion Matrix' >> report.md
     echo '![Confusion Matrix](./Results/model_results.png)' >> report.md
+
 	cml comment create report.md
 
 update-branch:
@@ -33,3 +34,5 @@ push-hub:
     huggingface-cli upload tmdeptrai3012/CICDforMLOps ./Results /Metrics --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
+
+all: install format train eval update-branch deploy
